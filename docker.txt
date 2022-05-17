@@ -26,5 +26,30 @@ Contanarization:
 
 Is a technology where we can package application along with dependent libraries, libs/bins (through which contaner communicates with docker tools which intern talks with host OS in providing resources ) together and can run within container which is isolated from another applicaitonn running  in same machine.
 
+Advantages:
+1. Container images /container are light weight as no OS installed and comes with libs/bins through which communicates with docker engine which intern communicates with host OS in sharing the hardware resources with all contanes running on the machine
+2. light weight , we can port differnt computers and we can achive CI/CD
+3.bootstrap quickly , so can achieve scalablity of application quickly
+4. patching and upgradation is very easy
+
+Best Utilization:
+
+Abstract the delivery of SF application.The developer upon building the software application, he package the sofware application with corresponding libraries and instructions to run it in containerized image and delivers it. 
+The devops engineer or qa or enduser irrespective of the technology application is build, they can quickly run the software application out of the containerized image we delivered.
+ 
+Standardize the workflow of the delivering and running the application as contaner images are light weight and we can achive CI/CD.
+
+Containarization technologies:
+
+1. docker
+2. redhat openshift
+3. mesosphere
+4. microsoft container
+
+
+
+
+
+
 
 
