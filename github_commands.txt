@@ -21,6 +21,6 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 
 Authoer identity error:
-git config --global user.email "mailid"
+git config --global user.email "mailId"
 
 
