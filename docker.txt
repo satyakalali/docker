@@ -1,1 +1,30 @@
 Docker Notes
+---------------
+
+Virtualization: 
+
+Is a technic where we can run multiple parallel programs in single machine where each program isolated with help of Hypervisor software (which reponsible for talking to host machine in providing the hardware resources to multiple virtual machines running top of Hypervisor).
+
+Advantages:
+
+1. Effectively utilize the underlying hardware resources.
+2. If host machine is compromised with security, no impact on  virtual machine 
+3. We can reduce the cost of infrastructure in building, deploying and delevering the application by reusing the same computer in running multiple applications.
+4. Each VM runs on own OS independent of host OS. So that we can easily deploy and run application on different OS env.
+5. More suitable for deploying and running the application that are long running process.
+
+Disadvatages:
+1. Virualation machine images conatains OS , so heavey weight and consumes more resources, not portable.
+2. rebooting takes time, so scalability is tough
+3. CI/CD difficult to achieve as virual machine images are heavy weight so it not easy to carry to diffenet environments.
+
+Best utilization:
+
+creating and providing dedicate computer env to different users where each env is isolated from each other. ex: Cloud provider can effectively use virtualization technique in sharing underlying resources of computers by creating dedicated computer env for multiple users.
+
+Contanarization:
+
+Is a technology where we can package application along with dependent libraries, libs/bins (through which contaner communicates with docker tools which intern talks with host OS in providing resources ) together and can run within container which is isolated from another applicaitonn running  in same machine.
+
+
+
