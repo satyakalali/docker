@@ -34,7 +34,7 @@ Advantages:
 
 Best Utilization:
 
-Abstract the delivery of SF application.The developer upon building the software application, he package the sofware application with corresponding libraries and instructions to run it in containerized image and delivers it. 
+Abstract the delivery process of SF application.The developer upon building the software application, he package the sofware application with corresponding libraries and instructions to run it in containerized image and delivers it. 
 The devops engineer or qa or enduser irrespective of the technology application is build, they can quickly run the software application out of the containerized image we delivered.
  
 Standardize the workflow of the delivering and running the application as contaner images are light weight and we can achive CI/CD.
@@ -45,6 +45,29 @@ Containarization technologies:
 2. redhat openshift
 3. mesosphere
 4. microsoft container
+
+Docker is an sw tool through which we can implement containarization. 
+
+Linux namespaces:
+
+Docker container works on the concept of namespaces to isolate one from other . Docker container will be executed within  that namespace and limitted to access the resources allocated to that namespace.
+
+Docker uses below namespaces:
+
+pid = runs the container in separate process namespace
+net = network namespace managing the n/w interfaces
+ipc = inter-process communication namespace 
+mnt = filesystem mounts
+uts = unix timesharing
+
+
+Control Groups (cgroups): docker engine uses cgroups to allocating physical resources and limiting their usage  by containers.
+
+Union FileSystem: docker container images are packaged and assembled based on union filesystem technic.
+
+
+
+
 
 
 
